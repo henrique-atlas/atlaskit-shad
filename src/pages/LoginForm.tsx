@@ -79,7 +79,7 @@ export function ProfileForm() {
                   />
                   <div>
                     <Button
-                      className="w-full mt-14 bg-blue-600"
+                      className="w-full mt-14"
                       variant="default"
                       size="lg"
                       type="submit"
