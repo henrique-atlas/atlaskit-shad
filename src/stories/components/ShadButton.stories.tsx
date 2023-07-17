@@ -14,7 +14,7 @@ const meta = {
       options: ["default",
       "sm",
       'lg',
-      "icon"],
+      "icon", null],
       control: { type: 'radio'}
     } 
   },
@@ -35,14 +35,14 @@ export const Secondary = () => {
     <ShadButton variant="secondary">Hello</ShadButton>
   )
 }
-export const Error = () => {
+export const ErrorLarge = () => {
   return (
-    <ShadButton variant="destructive">HelloError</ShadButton>
+    <ShadButton size="lg" variant="destructive">HelloError</ShadButton>
   )
 }
-export const Outline = () => {
+export const OutlineSmall = () => {
   return (
-    <ShadButton variant="outline">Hello</ShadButton>
+    <ShadButton size="sm" variant="outline">Hello</ShadButton>
   )
 }
 export const Ghost = () => {

@@ -77,9 +77,8 @@ export function ProfileForm() {
                       </FormItem>
                     )}
                   />
-                  <div>
+                  <div className="w-full">
                     <Button
-                      className="w-full mt-14"
                       variant="default"
                       size="lg"
                       type="submit"
