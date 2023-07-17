@@ -32,8 +32,8 @@ export function ProfileForm() {
   }
 
   return (
-    <div className="flex items-center min-h-screen bg-gray-50">
-      <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
+    <div className="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="flex-1 h-full max-w-4xl mx-auto bg-gray-50 rounded-lg shadow-xl dark:bg-gray-900">
         <div className="flex flex-col md:flex-row">
           <div className="h-32 md:h-auto md:w-1/2">
             <img
@@ -45,8 +45,8 @@ export function ProfileForm() {
 
           <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div className="w-full">
-              <h1 className="text-xl">Login to Your account</h1>
-              <h3 className="text-sm mb-4">
+              <h1 className="text-xl dark:text-white">Login to Your account</h1>
+              <h3 className="text-sm mb-4 dark:text-white">
                 Please enter your password and email to enter
               </h3>
               <Form {...form}>
