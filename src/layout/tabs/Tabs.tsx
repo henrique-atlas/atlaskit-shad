@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect } from "react"
 
 export default function TabsLgBasic({tabContent, tabNames}: {tabContent: any[], tabNames: string[]}) {
   const [tabSelected, setTabSelected] = useState({
@@ -6,9 +6,9 @@ export default function TabsLgBasic({tabContent, tabNames}: {tabContent: any[], 
     noTabs: 3,
   })
 
-  const wrapperRef = useRef(null)
+  const wrapperRef: any = useRef(null)
 
-  const handleKeyDown = e => {
+  const handleKeyDown = (e: { keyCode: number; target: any }) => {
     if (e.keyCode === 39) {
       if (wrapperRef.current && wrapperRef.current.contains(e.target)) {
         if (
@@ -73,8 +73,8 @@ export default function TabsLgBasic({tabContent, tabNames}: {tabContent: any[], 
               }`}
               id="tab-label-1a"
               role="tab"
-              aria-setsize="3"
-              aria-posinset="1"
+              aria-setsize={3}
+              aria-posinset={1}
               tabIndex={tabSelected.currentTab === 1 ? 0 : -1}
               aria-controls="tab-panel-1a"
               aria-selected={`${
@@ -94,8 +94,8 @@ export default function TabsLgBasic({tabContent, tabNames}: {tabContent: any[], 
               }`}
               id="tab-label-2a"
               role="tab"
-              aria-setsize="3"
-              aria-posinset="2"
+              aria-setsize={3}
+              aria-posinset={2}
               tabIndex={tabSelected.currentTab === 2 ? 0 : -1}
               aria-controls="tab-panel-2a"
               aria-selected={`${
@@ -115,8 +115,8 @@ export default function TabsLgBasic({tabContent, tabNames}: {tabContent: any[], 
               }`}
               id="tab-label-3a"
               role="tab"
-              aria-setsize="3"
-              aria-posinset="2"
+              aria-setsize={3}
+              aria-posinset={2}
               tabIndex={tabSelected.currentTab === 3 ? 0 : -1}
               aria-controls="tab-panel-2a"
               aria-selected={`${

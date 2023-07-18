@@ -1,15 +1,11 @@
 "use client"
 
-// import Link from "next/link"
-// import { zodResolver } from "@hookform/resolvers/zod"
-// import * as z from "zod"
 import atlasImg from '../assets/atlas-side-login.png'
 import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -17,16 +13,10 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 
-// const formSchema = z.object({
-//   username: z.string().min(2, {
-//     message: "Username must be at least 2 characters.",
-//   }),
-// })
-
 export function ProfileForm() {
   const form = useForm()
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     console.log('hello world');
   }
