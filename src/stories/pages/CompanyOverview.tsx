@@ -1,3 +1,4 @@
+import * as React from "react"
 import { GeneralInformation } from "./GeneralInformation"
 import { Header } from "@/layout/header/Header"
 import { SubHeader } from "@/layout/sub-header/SubHeader"

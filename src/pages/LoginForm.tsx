@@ -1,6 +1,6 @@
 "use client"
 
-import atlasImg from '../assets/atlas-side-login.png'
+import React from 'react'
 import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
 import {
@@ -12,6 +12,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+// import { atlasLogin } from '@/assets'
 
 export function ProfileForm() {
   const form = useForm()
@@ -21,16 +22,18 @@ export function ProfileForm() {
     console.log('hello world');
   }
 
+  // console.log('hello atlasLogin', atlasLogin);
+
   return (
     <div className="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
       <div className="flex-1 h-full max-w-4xl mx-auto bg-gray-50 rounded-lg shadow-xl dark:bg-gray-900">
         <div className="flex flex-col md:flex-row">
           <div className="h-32 md:h-auto md:w-1/2">
-            <img
+            {/* <img
               className="object-cover w-full h-full"
               alt="loginimage"
-              src={atlasImg}
-            />
+              src={atlasLogin}
+            /> */}
           </div>
 
           <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">

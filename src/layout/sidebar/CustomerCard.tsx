@@ -1,3 +1,4 @@
+import React from 'react'
 export const CustomerCard = () => (
     <div className="max-w-lg mx-auto rounded-lg shadow-md p-5">
         <img className="w-14 h-14 rounded-full mx-auto" src="https://picsum.photos/200" alt="Profile picture"/>

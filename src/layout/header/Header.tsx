@@ -1,5 +1,7 @@
+import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import Logo from "../../assets/logo_sm_white.svg";
+// import Logo from "@/assets/logo_sm_white.svg";
+import { atlasLogo } from "@/assets";
 
 /**
  * Primary UI component for user interaction
@@ -10,7 +12,7 @@ export const Header = () => {
       <nav className="bg-atlas-blue-900 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap items-center mr-auto max-w-screen-xl">
           <a href="#" className="flex items-center">
-            <img src={Logo} className="mr-3 h-6 sm:h-9" alt="logo" />
+            <img src={atlasLogo} className="mr-3 h-6 sm:h-9" alt="logo" />
           </a>
           <div className="flex ml-auto items-center lg:order-2">
             <svg
